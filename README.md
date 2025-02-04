@@ -1,12 +1,13 @@
-🆂🅿🅴🆁🆁🆈 🆃🅴🅲🅽🅾🅻🅾🅶🅸🅰 
+🆂🅿🅴🆁🆁🆈 🆃🅴🅲🅽🅾🅻🅾🅶🅸🅰 © 2025
 
-Fazendo o download do script de instalação e iniciando a instalação. (Usar somente na primeira instalação):
+Fazendo o download do script de instalação e iniciando a primeira instalação.
 
 ```bash
 sudo apt install -y git && git clone https://github.com/SperryTecnologia/tickets-main.git && sudo chmod -R 777 tickets-main && cd tickets-main && sudo ./install_primaria
 ```
 
-Acessando o diretório do script de instalação e instalando novas instalações. (Usar somente depois da primieira instalação para novos sistemas):
+Acessando o diretório do script de instalação e instalando novas instalações.
+
 ```bash
 cd ./tickets-main && sudo ./install_instancia
 ```
