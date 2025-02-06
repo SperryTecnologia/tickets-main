@@ -1,4 +1,5 @@
 🆂🅿🅴🆁🆁🆈 🆃🅴🅲🅽🅾🅻🅾🅶🅸🅰 © 2025
+----------------------------------------------------------------------------
 
 Sistema operacional homologado pra uso: 
 
@@ -21,6 +22,7 @@ Acessando o diretório do script de instalação e instalando novas instalaçõe
 cd ./tickets-main && sudo ./install_instancia
 ```
 
+----------------------------------------------------------------------------
 ----------------------------------------------------------------------------
 
 Utilizar apenas o repositório privado oficial de instalação:
