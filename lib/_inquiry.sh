@@ -12,7 +12,7 @@ get_link_git() {
   
   print_banner
   printf "${WHITE} 💻 Insira abaixo o link oficial do GITHUB que deseja instalar: ${GRAY_LIGHT}"
-  printf "${WHITE}(https://github.com/sperrytecnologia/tickets.git) ${GRAY_LIGHT}"
+  printf "${WHITE} https://github.com/sperrytecnologia/tickets.git ${GRAY_LIGHT}"
   printf "\n\n"
   read -p "> " link_git
 }
