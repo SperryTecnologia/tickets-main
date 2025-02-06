@@ -1,6 +1,12 @@
 #!/bin/bash
 
-# reset shell colors
+# --------------------------- #
+#     Sperry Tecnologia       #
+# www.sperrytecnologia.com.br #
+#   Shell Installer v4.8.2    #
+# --------------------------- #
+
+# redefinir cores do shell
 tput init
 
 # https://stackoverflow.com/questions/59895/how-to-get-the-source-directory-of-a-bash-script-from-within-the-script-itself
@@ -12,12 +18,12 @@ while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
 done
 PROJECT_ROOT="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
-# required imports
+# importações necessárias
 source "${PROJECT_ROOT}"/variables/manifest.sh
 source "${PROJECT_ROOT}"/utils/manifest.sh
 source "${PROJECT_ROOT}"/lib/manifest.sh
 
-# user configs file
+# arquivo de configurações do usuário
 if [[ ! -e "${PROJECT_ROOT}"/config ]]; then
   cat << EOF > "${PROJECT_ROOT}"/config
 deploy_password=${deploy_password}
@@ -26,17 +32,17 @@ db_pass=${db_pass}
 EOF
 fi
 
-# this file has passwords
+# este arquivo tem as senhas
 sudo su - root <<EOF
 chown root:root "${PROJECT_ROOT}"/config
 chmod 700 "${PROJECT_ROOT}"/config
 EOF
 source "${PROJECT_ROOT}"/config
 
-# interactive CLI
+# CLI interativo
 inquiry_options
 
-# dependencies related
+# dependências relacionadas
 #system_update
 #system_node_install
 #system_pm2_install
@@ -46,10 +52,10 @@ inquiry_options
 #system_nginx_install
 #system_certbot_install
 
-# system config
+# configuração do sistema
 #system_create_user
 
-# backend related
+# relacionado ao back-end
 system_git_clone
 backend_set_env
 backend_redis_create
@@ -60,14 +66,14 @@ backend_db_seed
 backend_start_pm2
 backend_nginx_setup
 
-# frontend related
+# relacionado ao frontend
 frontend_set_env
 frontend_node_dependencies
 frontend_node_build
 frontend_start_pm2
 frontend_nginx_setup
 
-# network related
+# relacionado à web e ssl
 #system_nginx_conf
 system_nginx_restart
 system_certbot_setup
