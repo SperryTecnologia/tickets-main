@@ -35,8 +35,8 @@ print_banner() {
   printf "${NC}";
 
   printf "\n"
-
-printf "${GREEN}";  
+  
+  
 printf "🆂🅿🅴🆁🆁🆈 🆃🅴🅲🅽🅾🅻🅾🅶🅸🅰";
 printf "${NC}";
   
