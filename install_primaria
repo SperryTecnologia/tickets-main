@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# --------------------------- #
+#     Sperry Tecnologia       #
+# www.sperrytecnologia.com.br #
+#   Shell Installer v4.8.2    #
+# --------------------------- #
+
 # redefinir cores do shell
 tput init
 
