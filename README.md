@@ -23,7 +23,6 @@ cd ./tickets-main && sudo ./install_instancia
 ```
 
 ----------------------------------------------------------------------------
-----------------------------------------------------------------------------
 
 Utilizar apenas o repositório privado oficial de instalação:
 https://github.com/sperrytecnologia/tickets.git
